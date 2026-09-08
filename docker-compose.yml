@@ -1,0 +1,9 @@
+services:
+  directfarm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: directfarm:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped
